@@ -1,0 +1,44 @@
+{
+    "name": "case-market",
+    "version": "1.0.0",
+    "description": "Global Legal Hackathon",
+    "main": "server.js",
+    "scripts": {
+        "start": "nodemon --exec babel-node server.js --ignore public",
+        "dev": "webpack -wd",
+        "sass": "node-sass -w sass/ -o public/css"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@babel/cli": "^7.2.3",
+        "@babel/core": "^7.3.3",
+        "@babel/node": "^7.2.2",
+        "@babel/preset-env": "^7.3.1",
+        "@babel/preset-react": "^7.0.0",
+        "axios": "^0.18.0",
+        "babel-eslint": "^10.0.1",
+        "babel-loader": "^8.0.5",
+        "body-parser": "^1.18.3",
+        "bootstrap": "^4.3.1",
+        "ejs": "^2.6.1",
+        "eslint": "^5.14.1",
+        "eslint-plugin-react": "^7.12.4",
+        "express": "^4.16.4",
+        "jquery": "^3.3.1",
+        "mongodb": "^3.1.13",
+        "node-sass": "^4.11.0",
+        "node-sass-middleware": "^0.11.0",
+        "nodemon": "^1.18.10",
+        "popper.js": "^1.14.7",
+        "prop-types": "^15.7.2",
+        "react": "^16.8.3",
+        "react-dom": "^16.8.3",
+        "uglifyjs-webpack-plugin": "^2.1.1",
+        "webpack": "^4.29.5",
+        "webpack-cli": "^3.2.3"
+    },
+    "engines": {
+        "node": "8.x"
+    }
+}
