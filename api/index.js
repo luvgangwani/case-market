@@ -199,6 +199,11 @@ const getLawyerRecommendations = (queryToken) => {
         
     });
 
+    // sorting array according to rates
+    recommendedLawyers = recommendedLawyers.sort((a, b) => (
+        (b.ratings - a.ratings)
+    ));
+
     return recommendedLawyers;
 }
 
