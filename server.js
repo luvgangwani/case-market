@@ -2,7 +2,8 @@ import express from "express";
 import config from "./config";
 import path from 'path';
 import sassMiddleware from 'node-sass-middleware';
-
+import apiRouter from './api';
+import bodyParser from 'body-parser';
 
 const app = express();
 
@@ -20,6 +21,12 @@ app.use(sassMiddleware({
 	src: path.join(__dirname, 'sass'),
 	dest: path.join(__dirname, 'public')
 }))
+
+app.use(bodyParser.urlencoded({
+	extended: true
+}));
+
+app.use("/api",apiRouter);
 
 app.set("view engine", "ejs")
 

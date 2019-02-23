@@ -1,0 +1,62 @@
+{
+	"35fe599c-c15c-43cc-b0cc-5e50977120dc": {
+		"id": "35fe599c-c15c-43cc-b0cc-5e50977120dc",
+		"lawyer_id": "6e6d9e1f-c8b0-4f8b-96cb-d312eadd963c",
+		"rate_per_hr": 1707.35,
+		"email": "sfusedale0@arstechnica.com"
+	},
+	"4f21bfaa-1a19-4f3a-9d51-6158ed494478": {
+		"id": "4f21bfaa-1a19-4f3a-9d51-6158ed494478",
+		"lawyer_id": "1dab9a26-ddd8-4007-a414-c47eabb729be",
+		"rate_per_hr": 795.03,
+		"email": "ascudders1@slashdot.org"
+	},
+	"0813cc19-d129-4761-b868-ef36a2f7ebd3": {
+		"id": "0813cc19-d129-4761-b868-ef36a2f7ebd3",
+		"lawyer_id": "83919d4d-0f93-4ee3-9126-a473d5c10866",
+		"rate_per_hr": 870.85,
+		"email": "twoolsey2@chicagotribune.com"
+	},
+	"ee0ac88a-2ce9-423e-a780-28606165a648": {
+		"id": "ee0ac88a-2ce9-423e-a780-28606165a648",
+		"lawyer_id": "0aa49dcf-947e-42c3-b2f3-bd1234bf14ef",
+		"rate_per_hr": 1509.04,
+		"email": "bplacide3@slate.com"
+	},
+	"b19fa1ae-f7d2-438d-a792-ff14221e186f": {
+		"id": "b19fa1ae-f7d2-438d-a792-ff14221e186f",
+		"lawyer_id": "ff2f5ae5-aa6b-4253-bc00-9fcf4b8438c2",
+		"rate_per_hr": 1739.98,
+		"email": "tgaskell4@addtoany.com"
+	},
+	"48612c18-1f84-4f08-bbc8-9c46c1ce7fcf": {
+		"id": "48612c18-1f84-4f08-bbc8-9c46c1ce7fcf",
+		"lawyer_id": "e765a83f-c0f3-4bbb-be88-05bb97dab5c0",
+		"rate_per_hr": 894.37,
+		"email": "cdrynan5@mit.edu"
+	},
+	"e42c2ef1-b5d4-4f81-92d3-4cc3c08ba946": {
+		"id": "e42c2ef1-b5d4-4f81-92d3-4cc3c08ba946",
+		"lawyer_id": "c026e4a5-5edc-4548-b3d8-4a9921dc4322",
+		"rate_per_hr": 295.98,
+		"email": "lblackhall6@boston.com"
+	},
+	"17cd81b9-eceb-43a8-b648-9b9f94537c88": {
+		"id": "17cd81b9-eceb-43a8-b648-9b9f94537c88",
+		"lawyer_id": "71536559-c951-411f-9f40-5c349a49958e",
+		"rate_per_hr": 1217.73,
+		"email": "smalimoe7@netvibes.com"
+	},
+	"6fe875bd-c45f-4cc5-8857-343b4430a61e": {
+		"id": "6fe875bd-c45f-4cc5-8857-343b4430a61e",
+		"lawyer_id": "ac335863-d237-4e04-892e-a80411c72ab7",
+		"rate_per_hr": 1721.95,
+		"email": "fmugg8@time.com"
+	},
+	"1a3e2997-22e5-423c-bdc2-7de20a43865b": {
+		"id": "1a3e2997-22e5-423c-bdc2-7de20a43865b",
+		"lawyer_id": "035c7456-daef-4970-9504-3228a0dd143e",
+		"rate_per_hr": 614.36,
+		"email": "afairburn9@europa.eu"
+	}
+}

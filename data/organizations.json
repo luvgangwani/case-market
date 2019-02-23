@@ -1,0 +1,62 @@
+{
+	"8b5d9f22-2e06-4857-8b26-fe9e316598b0": {
+		"id": "8b5d9f22-2e06-4857-8b26-fe9e316598b0",
+		"organization_name": "Topdrive",
+		"organization_address": "7247 Meadow Ridge Circle",
+		"license_no": "9126b3c7-96c4-4f23-b05e-888cc0a1faa4"
+	},
+	"4946ef15-6763-427d-8dda-83d120a6fc61": {
+		"id": "4946ef15-6763-427d-8dda-83d120a6fc61",
+		"organization_name": "Zoonoodle",
+		"organization_address": "49 Buell Lane",
+		"license_no": "61103893-6751-4c42-b051-e86fc49496ba"
+	},
+	"28529c91-4bc7-4b6f-b2a7-bcf8be99b4fb": {
+		"id": "28529c91-4bc7-4b6f-b2a7-bcf8be99b4fb",
+		"organization_name": "Skiptube",
+		"organization_address": "880 Logan Hill",
+		"license_no": "71c42afa-2dd2-4ee7-8d8a-0754796bf6c1"
+	},
+	"3dd7b9a2-d02e-4835-be99-a726e99f9d49": {
+		"id": "3dd7b9a2-d02e-4835-be99-a726e99f9d49",
+		"organization_name": "Chatterpoint",
+		"organization_address": "3 Hoepker Trail",
+		"license_no": "50d6cd7a-56ae-4795-96ab-9f3606890c02"
+	},
+	"a02d92a8-c410-42d7-a652-0251bb683c00": {
+		"id": "a02d92a8-c410-42d7-a652-0251bb683c00",
+		"organization_name": "Minyx",
+		"organization_address": "3 Rockefeller Center",
+		"license_no": "a45f356d-4fe0-45b8-b99c-336f46104854"
+	},
+	"7a477b1a-9806-4895-b2a2-2d804f9b6e19": {
+		"id": "7a477b1a-9806-4895-b2a2-2d804f9b6e19",
+		"organization_name": "Avamba",
+		"organization_address": "59389 Paget Court",
+		"license_no": "3bd9dd7e-cd0d-4998-bfd0-dd3b1b31e882"
+	},
+	"5301e17a-a4e6-4e7d-890f-d522e88d4089": {
+		"id": "5301e17a-a4e6-4e7d-890f-d522e88d4089",
+		"organization_name": "Zazio",
+		"organization_address": "36424 John Wall Alley",
+		"license_no": "a7e28fb9-307e-438f-8c5d-2a84d97d6429"
+	},
+	"2be01c04-dfcf-458f-85e5-32d39480ca49": {
+		"id": "2be01c04-dfcf-458f-85e5-32d39480ca49",
+		"organization_name": "Meemm",
+		"organization_address": "9021 Monica Road",
+		"license_no": "a31e52c4-26d0-4138-8833-3344dc313bd1"
+	},
+	"3dc98f57-a284-42e0-9bd2-008b3ace1453": {
+		"id": "3dc98f57-a284-42e0-9bd2-008b3ace1453",
+		"organization_name": "Mudo",
+		"organization_address": "05339 Washington Point",
+		"license_no": "6d8498ec-8b78-4809-b3e7-110dcebc9280"
+	},
+	"314b2a3f-3035-423b-a0fc-8790b5bbc3df": {
+		"id": "314b2a3f-3035-423b-a0fc-8790b5bbc3df",
+		"organization_name": "Rhynyx",
+		"organization_address": "94 Village Green Hill",
+		"license_no": "3e581961-26ac-4fa1-adaf-ee0b3eaac31e"
+	}
+}

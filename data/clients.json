@@ -1,0 +1,92 @@
+{
+	"7aaabfa7-6bfa-4f46-88d0-c45075d86abe": {
+		"id": "7aaabfa7-6bfa-4f46-88d0-c45075d86abe",
+		"first_name": "Barret",
+		"last_name": "Bohills",
+		"email": "bbohills0@guardian.co.uk",
+		"password": "ZTZ2XU",
+		"gender": "Male",
+		"contact_number": "+86-925-263-3609"
+	},
+	"e4b75b0a-96ae-4307-a72b-40061d141d7a": {
+		"id": "e4b75b0a-96ae-4307-a72b-40061d141d7a",
+		"first_name": "Ky",
+		"last_name": "Gilfoy",
+		"email": "kgilfoy1@cdc.gov",
+		"password": "49l7UmRyt7Mp",
+		"gender": "Male",
+		"contact_number": "+380-315-136-7915"
+	},
+	"f3245262-82eb-4f30-9487-287ed646af96": {
+		"id": "f3245262-82eb-4f30-9487-287ed646af96",
+		"first_name": "Zared",
+		"last_name": "Doring",
+		"email": "zdoring2@cnbc.com",
+		"password": "DZq2TpogT",
+		"gender": "Male",
+		"contact_number": "+46-137-655-0607"
+	},
+	"aa594bf1-4a62-4604-9319-56e9b8e33560": {
+		"id": "aa594bf1-4a62-4604-9319-56e9b8e33560",
+		"first_name": "Linea",
+		"last_name": "Bente",
+		"email": "lbente3@xrea.com",
+		"password": "yOdc1wH0",
+		"gender": "Female",
+		"contact_number": "+86-149-161-6397"
+	},
+	"a64a619a-92a6-46a8-9e94-8dcecda28e25": {
+		"id": "a64a619a-92a6-46a8-9e94-8dcecda28e25",
+		"first_name": "Susy",
+		"last_name": "Wahner",
+		"email": "swahner4@soundcloud.com",
+		"password": "hgoKy6",
+		"gender": "Female",
+		"contact_number": "+66-528-216-3254"
+	},
+	"87e3c344-f6eb-4040-991f-852ce15b618e": {
+		"id": "87e3c344-f6eb-4040-991f-852ce15b618e",
+		"first_name": "Karrie",
+		"last_name": "Ewdale",
+		"email": "kewdale5@drupal.org",
+		"password": "4UhPinmy7y",
+		"gender": "Female",
+		"contact_number": "+850-302-222-0347"
+	},
+	"9eba4bf1-1b35-458e-b6a6-1c42c4d20f23": {
+		"id": "9eba4bf1-1b35-458e-b6a6-1c42c4d20f23",
+		"first_name": "Aggie",
+		"last_name": "Pennicott",
+		"email": "apennicott6@reddit.com",
+		"password": "mKBBDGm8wk",
+		"gender": "Female",
+		"contact_number": "+60-378-911-7202"
+	},
+	"44fdad95-78d5-4484-9956-13f3d9821206": {
+		"id": "44fdad95-78d5-4484-9956-13f3d9821206",
+		"first_name": "Charis",
+		"last_name": "Tysall",
+		"email": "ctysall7@uiuc.edu",
+		"password": "KM5r74",
+		"gender": "Female",
+		"contact_number": "+84-539-820-5352"
+	},
+	"84a0a6c7-7be6-4b8a-8e60-c55daebc37a4": {
+		"id": "84a0a6c7-7be6-4b8a-8e60-c55daebc37a4",
+		"first_name": "Felicle",
+		"last_name": "Gale",
+		"email": "fgale8@scribd.com",
+		"password": "cGPHc03aFvnx",
+		"gender": "Female",
+		"contact_number": "+1-475-705-4948"
+	},
+	"0cacba92-cc28-41ef-80fc-e56987b538fb": {
+		"id": "0cacba92-cc28-41ef-80fc-e56987b538fb",
+		"first_name": "Briano",
+		"last_name": "Gallgher",
+		"email": "bgallgher9@etsy.com",
+		"password": "Qz8A80W",
+		"gender": "Male",
+		"contact_number": "+86-610-877-4937"
+	}
+}
