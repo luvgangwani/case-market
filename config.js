@@ -5,7 +5,7 @@ const env = process.env
 
 export default { 
 	nodeEnv : env.NODE_ENV || "development", 
-	port : env.PORT || 3000, 
+	port : env.PORT || 5000, 
 	host : env.HOST || '0.0.0.0',
 	clientsFile: path.resolve("data","clients.json"),
 	lawyersFile: path.resolve("data","lawyers.json"),
