@@ -10,6 +10,7 @@ export default {
 	clientsFile: path.resolve("data","clients.json"),
 	lawyersFile: path.resolve("data","lawyers.json"),
 	lawyersRatesFile: path.resolve("data","lawyers_rates.json"),
-	lawyersSpecializationFile: path.resolve("data","lawyers_specializations.json"),
-	organizationsFile: path.resolve("data", "organizations.json")
+	specializationFile: path.resolve("data","specializations.json"),
+	organizationsFile: path.resolve("data", "organizations.json"),
+	stopwordsFile: path.resolve("data","stopwords.json")
 }

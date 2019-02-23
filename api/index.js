@@ -5,8 +5,9 @@ import assert from 'assert';
 let clientsData = require(config.clientsFile);
 let lawyersData = require(config.lawyersFile);
 let lawyersRatesData = require(config.lawyersRatesFile);
-let lawyersSpecializationsData = require(config.lawyersSpecializationFile);
+let specializationsData = require(config.specializationFile);
 let organizationsData = require(config.organizationsFile);
+let stopwordsData = require(config.stopwordsFile);
 
 
 let router = express.Router();
@@ -26,6 +27,16 @@ router.get('/client/:clientId', (request, response) => {
 // Lawyer Data API's
 
 router.get('/lawyer', (request, response) => {
+    
+    // Adding organization name
+
+    Object.keys(lawyersData).map((lawyerId) => {
+        let lawyerObj = lawyersData[lawyerId]
+        let organization_id = lawyerObj["organization_id"]
+
+        lawyerObj["organization_name"] = organizationsData[organization_id].organization_name;
+    });
+
     response.send(lawyersData);
 });
 
@@ -34,6 +45,19 @@ router.get('/lawyer/:lawyerId', (request, response) => {
     let lawyerId = request.params.lawyerId;
 
     response.send(lawyersData[lawyerId]);
+});
+
+// Organization Data API's
+
+router.get('/lawfirm', (request, response) => {
+    response.send(organizationsData);
+});
+
+
+router.get('/lawfirm/:lawfirmId', (request, response) => {
+    let lawFirmId = request.params.lawyerId;
+
+    response.send(organizationsData[lawFirmId]);
 });
 
 // Login API
@@ -82,4 +106,120 @@ router.post("/login/:roleName", (request, response) => {
 
     response.send(returnData);
 });
+
+
+// Get Lawyer Recommendations
+
+const removePunctuations = (query) => {
+
+    return query.replace(/[.,\/?;':"{}!@#\$%\^&\*\(\)]/g," ");
+
+}
+
+const tokenize = (query) => {
+
+    query = removePunctuations(query);
+
+    return query.split(" ");
+
+}
+
+const removeBlankTokens = (queryTokens) => {
+    queryTokens = queryTokens.filter((token) => (
+        (token != null && token != '' && token != " ")
+    ));
+
+    return queryTokens;
+}
+
+const removeStopWords = (queryTokens) => {
+
+    let stopwords = stopwordsData;
+
+    stopwords = removeBlankTokens(stopwords);
+
+    let filteredTokens = [];
+
+    queryTokens.map((token) => {
+        if (!stopwords.includes(token.toLowerCase())) {
+            filteredTokens.push(token);
+        }
+    });
+
+    return filteredTokens;
+}
+
+const getContextualTokens = (queryTokens) => {
+    
+    let specializations = specializationsData;
+
+    let contextualTokens = [];
+
+    queryTokens.map((token) => {
+        specializations.map((specialization) => {
+            if (specialization.indexOf(token) != -1){
+                if (!contextualTokens.includes(token)){
+                    contextualTokens.push(token);
+                }
+            }
+        })
+    });
+
+    return contextualTokens;
+
+}
+
+const getLawyerRecommendations = (queryToken) => {
+
+    let lawyers = lawyersData;
+
+    let recommendedLawyers = [];
+
+    // Adding organization name
+
+    Object.keys(lawyers).map((lawyerId) => {
+        let lawyerObj = lawyers[lawyerId]
+        let organization_id = lawyerObj["organization_id"]
+
+        lawyerObj["organization_name"] = organizationsData[organization_id].organization_name;
+    });
+
+    // Compare query tokens with lawyer specializations
+
+    Object.keys(lawyers).map((lawyerId) => {
+        let lawyerObj = lawyers[lawyerId];
+
+        queryToken.map((token) => {
+            lawyerObj.specialization.map((eachSp) => {
+                if (eachSp.indexOf(token) != -1){
+                    recommendedLawyers.push(lawyerObj);
+                }
+            })
+        })
+        
+    });
+
+    return recommendedLawyers;
+}
+
+router.post('/lawyer-recommendations', (request, response) => {
+
+    let topic = request.body.topic;
+    let location = request.body.location.toLowerCase();
+    let query = request.body.query;
+
+    let queryTokens = tokenize(query);
+    
+    queryTokens = removeBlankTokens(queryTokens);
+
+    queryTokens = removeStopWords(queryTokens);
+
+    queryTokens = getContextualTokens(queryTokens);
+
+    let lawyerRecommendations = getLawyerRecommendations(queryTokens);
+
+    response.send(lawyerRecommendations);
+
+});
+
 export default router;
