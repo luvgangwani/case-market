@@ -7,8 +7,9 @@
 		"password": "q5ZUqhSJQ",
 		"gender": "Female",
 		"contact_number": "+86-513-470-6606",
-		"organization_id": "d4fe7c21-e6cb-462a-b085-c1c0be324cd6",
-		"specialization": ""
+		"organization_id": "8b5d9f22-2e06-4857-8b26-fe9e316598b0",
+		"specialization": [ "personal property security register","business structure","beneficiary" ],
+		"ratings": 1.5
 	},
 	"1dab9a26-ddd8-4007-a414-c47eabb729be": {
 		"id": "1dab9a26-ddd8-4007-a414-c47eabb729be",
@@ -18,8 +19,9 @@
 		"password": "lPVApzp6GVcj",
 		"gender": "Female",
 		"contact_number": "+1-318-756-1878",
-		"organization_id": "fb35e640-c345-4c17-94f6-d30fed365f14",
-		"specialization": ""
+		"organization_id": "4946ef15-6763-427d-8dda-83d120a6fc61",
+		"specialization": [ "property", "contract of sale", "DTT" ],
+		"ratings": 4.7
 	},
 	"83919d4d-0f93-4ee3-9126-a473d5c10866": {
 		"id": "83919d4d-0f93-4ee3-9126-a473d5c10866",
@@ -29,8 +31,9 @@
 		"password": "zy8PG3YC",
 		"gender": "Female",
 		"contact_number": "+359-366-687-3156",
-		"organization_id": "68d7fcd7-2905-4571-b67b-48d9162c9935",
-		"specialization": ""
+		"organization_id": "28529c91-4bc7-4b6f-b2a7-bcf8be99b4fb",
+		"specialization": [ "donation", "de-facto", "electronic title" ],
+		"ratings": 1.9
 	},
 	"0aa49dcf-947e-42c3-b2f3-bd1234bf14ef": {
 		"id": "0aa49dcf-947e-42c3-b2f3-bd1234bf14ef",
@@ -40,8 +43,9 @@
 		"password": "7hG1AwsYF",
 		"gender": "Female",
 		"contact_number": "+33-608-158-8457",
-		"organization_id": "8364c29f-42f4-48e2-a563-da62afc2106b",
-		"specialization": ""
+		"organization_id": "3dd7b9a2-d02e-4835-be99-a726e99f9d49",
+		"specialization": [ "pexa", "sole trader", "defame" ],
+		"ratings": 3.3
 	},
 	"ff2f5ae5-aa6b-4253-bc00-9fcf4b8438c2": {
 		"id": "ff2f5ae5-aa6b-4253-bc00-9fcf4b8438c2",
@@ -51,8 +55,9 @@
 		"password": "jXjeSIb",
 		"gender": "Female",
 		"contact_number": "+970-778-833-2616",
-		"organization_id": "b0f062d8-02ac-40a5-b5cf-b360167f0b78",
-		"specialization": ""
+		"organization_id": "a02d92a8-c410-42d7-a652-0251bb683c00",
+		"specialization": [ "pool of assets", "estate", "family law rules" ],
+		"ratings": 2.4
 	},
 	"e765a83f-c0f3-4bbb-be88-05bb97dab5c0": {
 		"id": "e765a83f-c0f3-4bbb-be88-05bb97dab5c0",
@@ -62,8 +67,9 @@
 		"password": "uBnORGQ",
 		"gender": "Male",
 		"contact_number": "+374-871-865-0271",
-		"organization_id": "7c5b436d-42a4-41e0-9de2-b35bb441622d",
-		"specialization": ""
+		"organization_id": "7a477b1a-9806-4895-b2a2-2d804f9b6e19",
+		"specialization": [ "child", "property", "will" ],
+		"ratings": 4.0
 	},
 	"c026e4a5-5edc-4548-b3d8-4a9921dc4322": {
 		"id": "c026e4a5-5edc-4548-b3d8-4a9921dc4322",
@@ -73,8 +79,9 @@
 		"password": "yJWvX2",
 		"gender": "Female",
 		"contact_number": "+46-157-687-5688",
-		"organization_id": "a420cb00-86c6-47a2-82f7-d4a337df4b51",
-		"specialization": ""
+		"organization_id": "2be01c04-dfcf-458f-85e5-32d39480ca49",
+		"specialization": [ "contract of sale", "employment", "oath" ],
+		"ratings": 3.7
 	},
 	"71536559-c951-411f-9f40-5c349a49958e": {
 		"id": "71536559-c951-411f-9f40-5c349a49958e",
@@ -84,8 +91,9 @@
 		"password": "ASt96m0KM",
 		"gender": "Female",
 		"contact_number": "+48-151-884-0168",
-		"organization_id": "02647d54-7063-4b4c-89f2-a3ed74be33db",
-		"specialization": ""
+		"organization_id": "2be01c04-dfcf-458f-85e5-32d39480ca49",
+		"specialization": [ "commercial property", "same sex relationship", "unconditional" ],
+		"ratings": 4.1
 	},
 	"ac335863-d237-4e04-892e-a80411c72ab7": {
 		"id": "ac335863-d237-4e04-892e-a80411c72ab7",
@@ -95,8 +103,9 @@
 		"password": "AFdc8Dl6c",
 		"gender": "Female",
 		"contact_number": "+62-655-331-5681",
-		"organization_id": "e5869e6c-08bb-4581-b74e-dd3feeb814ad",
-		"specialization": ""
+		"organization_id": "3dc98f57-a284-42e0-9bd2-008b3ace1453",
+		"specialization":[ "pre nuptial", "tenants in common", "digital rights" ],
+		"ratings": 1.7
 	},
 	"035c7456-daef-4970-9504-3228a0dd143e": {
 		"id": "035c7456-daef-4970-9504-3228a0dd143e",
@@ -106,7 +115,8 @@
 		"password": "7E2bmJs8m",
 		"gender": "Female",
 		"contact_number": "+687-411-350-3375",
-		"organization_id": "7fc4713b-3266-4a3e-a921-fdcb40a385df",
-		"specialization": ""
+		"organization_id": "314b2a3f-3035-423b-a0fc-8790b5bbc3df",
+		"specialization": [ "business name", "will", "estate" ],
+		"ratings": 1.9
 	}
 }
