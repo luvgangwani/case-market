@@ -28,4 +28,9 @@ export const login = (email,password, roleName) => (
 export const getLawyerRecommendations = (topic, location, query) => (
     axios.post(`/api/lawyer-recommendations`)
         .then(response => response.data)
-)
+);
+
+export const register = (userObj) => (
+    axios.post(`/api/register/client`)
+        .then(response => response.data)
+);

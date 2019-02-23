@@ -2,6 +2,8 @@ import express from 'express';
 import config from '../config';
 import assert from 'assert';
 
+let fs = require('fs');
+
 let clientsData = require(config.clientsFile);
 let lawyersData = require(config.lawyersFile);
 let lawyersRatesData = require(config.lawyersRatesFile);
@@ -22,6 +24,16 @@ router.get('/client/:clientId', (request, response) => {
     let clientId = request.params.clientId;
 
     response.send(clientsData[clientId]);
+});
+
+router.post(`/register/client`, (request, response) => {
+    let clientObj = request.body.clientObj;
+
+    clientsData[clientObj.id] = clientObj;
+
+    writeToFile(config.clientsFile, clientsData);
+
+    response.send(clientObj);
 });
 
 // Lawyer Data API's
@@ -226,5 +238,16 @@ router.post('/lawyer-recommendations', (request, response) => {
     response.send(lawyerRecommendations);
 
 });
+
+
+// write data to file
+
+const writeToFile = (filePath, fileData) => {
+    fs.writeFileSync(filePath, JSON.stringify(fileData), 'utf-8', (err) => {
+        if (err) {
+            console.log(err);
+        }
+    })
+}
 
 export default router;
