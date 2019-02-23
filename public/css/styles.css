@@ -1,2 +1,254 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
 body {
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  background: #4267b2;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+/* Login Component Style */
+.login-input {
+  font-family: Ubuntu-Bold;
+  font-size: 15px;
+  margin-top: 10px;
+  color: #1b3815;
+  line-height: 1.2;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 55px;
+  background: #ebebeb;
+  border-radius: 27px;
+  padding: 0 35px 0 35px; }
+
+.login-wrap {
+  width: 500px;
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1); }
+
+.login-form-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+  height: 50px;
+  background-color: rebeccapurple;
+  border-radius: 25px;
+  font-size: 15px;
+  margin: 10px 0px 10px 0px;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s; }
+
+.span-login-title {
+  font-size: 30px;
+  color: #fff;
+  line-height: 1.2;
+  text-align: center;
+  display: block;
+  position: relative;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rebeccapurple;
+  padding-top: 50px;
+  padding-bottom: 39px; }
+
+.login-form {
+  margin: 10% auto; }
+
+.login-component {
+  display: inline-flex;
+  justify-content: center;
+  align-content: center; }
+
+.login-form-content {
+  display: inline-flex;
+  justify-content: inherit;
+  align-content: inherit; }
+
+.signup-link-content {
+  display: inline-flex;
+  justify-content: inherit;
+  align-content: inherit;
+  flex-direction: column;
+  padding: 5px 0px 10px 0px; }
+
+.span-text-1 {
+  font-family: Ubuntu-Regular;
+  font-size: 15px;
+  color: #999999;
+  line-height: 1.4; }
+
+.signup-link {
+  font-size: 15px;
+  color: rebeccapurple;
+  line-height: 1.4;
+  font-weight: bolder;
+  text-transform: uppercase; }
+
+/* Login Component Style */
+/* Search Feed Styles*/
+.card-content {
+  text-align: left; }
+
+.feed-card-img {
+  width: 42%;
+  height: 67%;
+  border: 5px solid white;
+  margin: 20px auto;
+  border-radius: 100%; }
+
+.card-image {
+  background: #3f1767; }
+
+.feed-card-title {
+  color: rebeccapurple;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.feed-card-description {
+  overflow: hidden;
+  height: 50px; }
+
+.feed-card-rating {
+  position: absolute;
+  left: 20px;
+  top: 17px;
+  font-weight: 600;
+  color: white;
+  font-size: larger; }
+
+.feed-card-rate-img {
+  position: absolute;
+  left: 47px;
+  top: 17px;
+  width: 20px;
+  height: 21px; }
+
+.feed-card-row {
+  height: 225px; }
+
+.card-button {
+  color: white;
+  padding: 10px;
+  font-size: unset;
+  font-weight: 800;
+  border: none;
+  font-variant: all-small-caps;
+  background: #3f1767; }
+
+.feed-card-org-name {
+  padding: 5px;
+  left: 23%;
+  color: white;
+  position: absolute;
+  top: 178px;
+  text-transform: uppercase;
+  background: #ffffff14;
+  border-radius: 10px;
+  border: 2px solid white; }
+
+/* Search Feed Styles*/
+/* Register Page Styles*/
+.signup-info-title {
+  font-size: larger;
+  color: rebeccapurple;
+  font-weight: bolder;
+  padding: 30px 0px 0px 0px; }
+
+/* Register Page Styles*/
+/* Mahesh Styles */
+.home-container {
+  width: 100%;
+  margin: 0 !important;
+  position: relative;
+  top: 200px;
   text-align: center; }
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 75%;
+  background: #f1f1f1;
+  border-radius: 5px; }
+
+form.example button {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  background: #3b024d;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer; }
+
+form.example button:hover {
+  background: #ea04ff; }
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+.dropdown-lawyer-cat {
+  text-align: left; }
+
+.button-center {
+  display: inline-flex;
+  justify-content: center;
+  align-content: center; }
+
+/* Mahesh Styles */
+/* Home PAge */
+.home.card {
+  top: 30vh;
+  background-color: transparent;
+  border: none;
+  color: #ffffff; }
+  .home.card .card-header {
+    font-weight: bold;
+    font-size: 10vmin;
+    border-bottom: 1px solid #ffffff; }
+  .home.card .card-body {
+    color: #ffffff; }
+    .home.card .card-body .btn-default {
+      color: #ffffff;
+      border: 2px solid #ffffff; }
+
+.bg-light {
+  background: #f8f9fa91 !important; }
+
+/* Search Page */
+.search.card {
+  top: 20vh;
+  background-color: transparent;
+  border: none;
+  color: #ffffff; }
+  .search.card .card-header {
+    border-bottom: 1px solid #ffffff; }
+  .search.card .btn-default {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    border-radius: 5px; }
+
+.card.search-feed {
+  top: 30vh; }

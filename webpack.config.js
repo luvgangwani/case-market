@@ -12,6 +12,10 @@ module.exports = {
 				"test": /\.js$/,
 				"loader": "babel-loader",
 			},
+			{
+				"test": /\.(gif|png|jpe?g|svg)$/i,
+				"loader": "image-webpack-loader",
+			}
 		],
 	},
 	"optimization": {
