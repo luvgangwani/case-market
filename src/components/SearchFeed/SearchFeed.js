@@ -27,7 +27,7 @@ class SearchFeed extends Component {
                             <div className="card-body float-left">
                             <h5 className="card-title feed-card-title">{`${recommendation.first_name} ${recommendation.last_name}`}</h5>
                                 <p className="card-text feed-card-location"><small className="text-muted">{recommendation.contact_number}</small></p>
-                                <p className="card-text feed-card-description">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p className="card-text feed-card-description">{recommendation.description}</p>
                                 <button className="card-button">Get in Touch</button>
                             </div>
                         </div>

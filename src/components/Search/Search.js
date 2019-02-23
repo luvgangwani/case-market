@@ -26,7 +26,7 @@ class Search extends Component{
                         <form>
                             <div className="form-row">
                               <div className="form-group col-md-6">
-                                <label>I need a lawyer htmlFor:</label>
+                                <label>I need a lawyer for:</label>
                                 <select ref="topic" className="custom-select" defaultValue="family">
                                         <option value="family">Family</option>
                                         <option value="property">Property</option>

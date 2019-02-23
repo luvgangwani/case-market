@@ -181,19 +181,33 @@ const getContextualTokens = (queryTokens) => {
 
 }
 
+const objExists = (obj, arr) => {
+
+    let found = false;
+
+    arr.map((item) => {
+        if ((found == false) && (item.id == obj.id)) {
+            found = true;
+        }
+    });
+    return found;
+}
+
 const getLawyerRecommendations = (queryToken) => {
 
     let lawyers = lawyersData;
 
     let recommendedLawyers = [];
 
-    // Adding organization name
+    // Adding organization name, address, description
 
     Object.keys(lawyers).map((lawyerId) => {
         let lawyerObj = lawyers[lawyerId]
         let organization_id = lawyerObj["organization_id"]
 
         lawyerObj["organization_name"] = organizationsData[organization_id].organization_name;
+        lawyerObj["organization_address"] = organizationsData[organization_id].organization_address;
+
     });
 
     // Compare query tokens with lawyer specializations
@@ -204,7 +218,9 @@ const getLawyerRecommendations = (queryToken) => {
         queryToken.map((token) => {
             lawyerObj.specialization.map((eachSp) => {
                 if (eachSp.indexOf(token) != -1){
-                    recommendedLawyers.push(lawyerObj);
+                    if (!objExists(lawyerObj, recommendedLawyers)){
+                        recommendedLawyers.push(lawyerObj);
+                    }
                 }
             })
         })
