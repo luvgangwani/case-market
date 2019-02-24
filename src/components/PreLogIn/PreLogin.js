@@ -13,11 +13,12 @@ class PreLogin extends Component{
     handleClient(){
         this.props.onClientBtnClick();
     }
+    
     render(){
         return(   
                 <div className="home card">
                     <div className="card-header">
-                        F.R.O.N.T
+                        <img src="/img/logo.png" alt="Logo" className="rounded"/>
                     </div>
                     <div className="card-body">
                         <button type="button" className="btn btn-default" onClick={this.handleClient}>Login as a client</button>

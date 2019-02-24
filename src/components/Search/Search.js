@@ -27,7 +27,7 @@ class Search extends Component{
                             <div className="form-row">
                               <div className="form-group col-md-6">
                                 <label>I need a lawyer htmlFor:</label>
-                                <select ref="topic" className="custom-select" defaultValue="family">
+                                <select ref="topic" className="custom-select" defaultValue="property">
                                         <option value="family">Family</option>
                                         <option value="property">Property</option>
                                         <option value="Wills & probate">Wills & probate</option>
@@ -46,7 +46,7 @@ class Search extends Component{
                            
                             <div className="form-group col-md-6">
                                 <label htmlFor="inputPassword4">Where are you located?</label>
-                                <input ref="location" type="text" placeholder="Enter Location" name="location" className="form-control"/>
+                                <input ref="location" type="text" placeholder="Enter Location" name="location" className="form-control" defaultValue="Clayton"/>
                             </div>
                             </div>
  
@@ -57,7 +57,8 @@ class Search extends Component{
                                 rows="5"
                                 columns="3"
                                 className="form-control"
-                                placeholder="Enter a brief description of your query">
+                                placeholder="Enter a brief description of your query"
+                                defaultValue="Hi,My name is Joe Smith, I am seeking advise on selling my share in a house that me and my brother own. I need a lawyer to split the property and advise on the sale.">
                                 </textarea> 
                            </div>
                             <button type="button" className="btn btn-default" onClick={this.handleSubmit}>Search</button>                                 

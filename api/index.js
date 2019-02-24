@@ -13,6 +13,7 @@ let stopwordsData = require(config.stopwordsFile);
 
 
 let router = express.Router();
+
 // Client Data API's
 
 router.get('/client', (request, response) => {
@@ -27,7 +28,8 @@ router.get('/client/:clientId', (request, response) => {
 });
 
 router.post(`/register/client`, (request, response) => {
-    let clientObj = request.body.clientObj;
+
+    let clientObj = request.body.userObj;
 
     clientsData[clientObj.id] = clientObj;
 

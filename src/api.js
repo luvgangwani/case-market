@@ -31,6 +31,6 @@ export const getLawyerRecommendations = (topic, location, query) => (
 );
 
 export const register = (userObj) => (
-    axios.post(`/api/register/client`)
+    axios.post(`/api/register/client`, { userObj })
         .then(response => response.data)
 );

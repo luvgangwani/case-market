@@ -17,8 +17,11 @@ body {
 	
 /* Login Component Style */
 
+.login-component{
+    margin: 20vh;
+}
+
 .login-input{
-	font-family: Ubuntu-Bold;
     font-size: 15px;
     margin-top: 10px;
     color: #1b3815;
@@ -28,7 +31,7 @@ body {
     width: 100%;
     height: 55px;
     background: #ebebeb;
-    border-radius: 27px;
+    border-radius: 5px;
     padding: 0 35px 0 35px;
 	}
 
@@ -36,7 +39,7 @@ body {
 .login-wrap{
 	width: 500px;
     background: #fff;
-    border-radius: 15px;
+    border-radius: 5px;
 	overflow: hidden;
 	box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
@@ -49,7 +52,7 @@ body {
     padding: 0 20px;
     width: 100%;
     height: 50px;
-    background-color: rebeccapurple;
+    background-color: #4267b2;
     border-radius: 25px;
 	font-size: 15px;
 	margin:10px 0px 10px 0px;
@@ -72,7 +75,7 @@ body {
     width: 100%;
     top: 0;
     left: 0;
-	background-color: rebeccapurple;
+	background-color: #4267b2;
     padding-top: 50px;
     padding-bottom: 39px;
 }
@@ -102,7 +105,6 @@ body {
 }
 
 .span-text-1{
-	font-family: Ubuntu-Regular;
     font-size: 15px;
     color: #999999;
     line-height: 1.4;
@@ -110,12 +112,20 @@ body {
 
 .signup-link{
     font-size: 15px;
-    color: rebeccapurple;
+    color: #4267b2;
 	line-height: 1.4;
 	font-weight: bolder;
     text-transform: uppercase;
 }
 
+.gender-span{
+    color: #4267b2;
+    font-size: large;
+}
+
+.gender-radio{
+    padding: 5px;
+}
 
 /* Login Component Style */
 
@@ -130,24 +140,29 @@ body {
 .feed-card-img{
 	width: 42%;
     height: 67%;
-    border: 5px solid white;
+    border: 5px solid #4267b2;
     margin: 20px auto;
     border-radius: 100%;
 }
 
 .card-image{
-	background: #3f1767;
+    background: #ffffff;
+    height: -webkit-fill-available;
 }
 
 .feed-card-title{
-	color: rebeccapurple;
+	color: #4267b2;
     font-weight: 700;
 	text-transform: uppercase;
 }
 
 .feed-card-description{
 	overflow: hidden;
-	height: 50px;
+	height: 18px;
+}
+
+.feed-card-org-title{
+    color: #4267b2;
 }
 
 .feed-card-rating{
@@ -155,7 +170,7 @@ body {
     left: 20px;
     top: 17px;
     font-weight: 600;
-    color: white;
+    color: #4267b2;
     font-size: larger;
 }
 
@@ -178,20 +193,20 @@ body {
     font-weight: 800;
     border: none;
     font-variant: all-small-caps;
-    background: #3f1767;
+    background: #4267b2;
 }
 
 
 .feed-card-org-name{
-	padding: 5px;
+    padding: 5px;
     left: 23%;
-    color: white;
+    color: #4267b2;
     position: absolute;
     top: 178px;
     text-transform: uppercase;
     background: #ffffff14;
-    border-radius: 10px;
-    border: 2px solid white;
+    border-radius: 5px;
+    border: 2px solid #4267b2;
 }
 /* Search Feed Styles*/
 
@@ -204,7 +219,7 @@ body {
 
 .signup-info-title{
 	font-size: larger;
-    color: rebeccapurple;
+    color: #4267b2;
     font-weight: bolder;
     padding: 30px 0px 0px 0px;
 }
@@ -291,6 +306,9 @@ form.example input[type=text] {
             border: 2px solid #ffffff;
         }
     }
+    img{
+        border-radius: 20px;
+    }
 }
 
 .bg-light{
@@ -320,4 +338,14 @@ form.example input[type=text] {
 
 .card.search-feed {
     top: 30vh;
+    margin-top: 18px;
+}
+
+.profile-component {
+    margin-top: 30vh;
+
+    .btn-default{
+        border: 2px solid #000000;
+        border-radius: 5px;
+    }
 }
