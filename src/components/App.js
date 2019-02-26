@@ -5,8 +5,8 @@ import PreLogin from './PreLogIn/PreLogin';
 import Header from './Header/Header';
 import SearchFeed from './SearchFeed/SearchFeed';
 import Search from './Search/Search';
-import Profile from './Profile';
 import * as api from '../api';
+import LawyerProfile from './LawyerProfile/LawyerProfile';
 
 class App extends Component {
 
@@ -15,7 +15,7 @@ class App extends Component {
 
 		this.state = {
 			content: "pre-login",
-			user: null,
+			loggedInClient: null,
 			recommendationObj:null,
 			lawyerRecommendations: null
 		}
@@ -76,17 +76,18 @@ class App extends Component {
 
 	clientLogin(email, password){
 		api.login(email, password, "client")
-    	.then(user => {
+    	.then(loggedInClient => {
 			this.setState({
-				content: "profile-page",
-				user
+				content: "recommended-lawyer-profile-page",
+				loggedInClient
 			})
     	});
 	}
 
 	getInTouchClick(recommendationObj) {
+		let content = this.state.loggedInClient == null ? "login-click" : "recommended-lawyer-profile-page";
 		this.setState({
-			content: "login-click",
+			content,
 			recommendationObj
 		})
 	}
@@ -112,10 +113,10 @@ class App extends Component {
 			return <Login
 					onCallLoginClick={this.clientLogin} />
 		}
-		else if (this.state.content === "profile-page") {
-			return <Profile 
+		else if (this.state.content === "recommended-lawyer-profile-page") {
+			return <LawyerProfile 
 					recommendationObj = {this.state.recommendationObj}
-					user = {this.state.user} />
+					loggedInClient = {this.state.loggedInClient} />
 		}
 		else if (this.state.content === "home-click") {
 			return <App />

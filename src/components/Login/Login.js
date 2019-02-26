@@ -1,16 +1,13 @@
 import React,{Component} from 'react';
 import * as api from '../../api';
-import Profile from '../../components/Profile';
+import LawyerProfile from '../../components/LawyerProfile/LawyerProfile';
 import Register from '../Register/Register';
 
 class Login extends Component {
 
 constructor(props) {
     super(props);        
-    this.state={
-        content: "login-page",
-        user: null
-    }    
+   
     this.callSignIn = this.callSignIn.bind(this);
     this.onSignupClick=this.onSignupClick.bind(this);
 }
@@ -34,7 +31,6 @@ onSignupClick(e){
 }
 
 render(){
-        if(this.state.content === "login-page"){
             return(
                 <div className="login-component">
             <div className="container">
@@ -59,8 +55,6 @@ render(){
             </div>
 
             );
-            
-        }
         // else if(this.state.content === "signup-click"){
         //     console.log("signup state");
         //     return <Register />;
@@ -70,7 +64,7 @@ render(){
         //     return <Profile />;
         // }
         
-}
+    }
 
 }
 
